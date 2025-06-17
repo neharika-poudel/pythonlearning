@@ -18,6 +18,7 @@ On Day one i have learned about what is python and why we use it and also i am a
 Python has the following built-in data types:
 
 a. Numeric Types
+    
     int → Integer numbers
     a = 10
 
@@ -80,11 +81,11 @@ print(my_list[-1])
 
 ### List Methods:
 
-my_list.append(50)       # Add at end
-my_list.insert(1, 15)    # Insert at position
-my_list.remove(20)       # Remove value
-my_list.pop()            # Remove last item
-my_list.clear()          # Remove all items
+my_list.append(50)      
+my_list.insert(1, 15)   
+my_list.remove(20)       
+my_list.pop()            
+my_list.clear()          
  class_list = ["neha", "shruti", "Srijana", "neha", "Santosh"]
 
     print( class_list)                    #for all class_list
@@ -110,7 +111,7 @@ print(my_list[::-1])    # Output: ['o', 'g', 'n', 'a', 'm']
 print(my_list[1:4])     # Output: ['a', 'n', 'g']
 
 ## Python Variables.
-    Variable is the container to store a data ,in can python we can declare a variable by following way.
+    Variable is the container to store a data ,in python we can declare a variable by following way.
 
 ### integer variable declaration.
     my_var=5
