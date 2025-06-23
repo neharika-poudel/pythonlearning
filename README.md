@@ -29,29 +29,29 @@ a. Numeric Types
     c = 2 + 3j
 
 b. String Type
-    str → String (text)
+        str → String (text)
         name = "neha"
         print(name)
 
 c. Sequence Types
-    list → Ordered, changeable, allows duplicates
+        list → Ordered, changeable, allows duplicates
         fruits = ["apple", "banana", "mango"]
         print(fruits)
 
-    tuple → Ordered, unchangeable, allows duplicates
+        tuple → Ordered, unchangeable, allows duplicates
         colors = ("red", "green", "blue")
         print(colors)
 
-    range → It generates a sequence of numbers
+        range → It generates a sequence of numbers
         numbers = range(5) 
         (0, 1, 2, 3, 4)
 
 d. Set Types
-    set → Unordered, no duplicates
+        set → Unordered, no duplicates
         my_set = {1, 2, 3, 4}
 
 e. Mapping Type
-    dict → Key-value pairs
+        dict → Key-value pairs
         student = {"name": "neharika", "age": 21}
 
 f. Boolean Type
@@ -73,11 +73,10 @@ f. Boolean Type
 
 ## Creating a list
 
-my_list = ["neha","roshni","shruti"]
-Accessing items
-print(my_list)
-print(my_list[0])   
-print(my_list[-1])
+    my_list = ["neha","roshni","shruti"]
+    print(my_list)
+    print(my_list[0])   
+    print(my_list[-1])
 
 ### List Methods:
 
@@ -102,13 +101,13 @@ my_list.clear()
     class_list.extend(new_students)       #here class_list extends the properties of new_students.
 
 ### list slicing
-my_list = ['m', 'a', 'n', 'g', 'o']
-print (my_list)          #output: ['m', 'a', 'n', 'g', 'o']
-print(my_list[0:3])     # Output: ['m', 'a', 'n']
-print(my_list[-2:])     # Output: ['g', 'o']
-print(my_list[:-1])     # Output: ['m', 'a', 'n', 'g']
-print(my_list[::-1])    # Output: ['o', 'g', 'n', 'a', 'm']
-print(my_list[1:4])     # Output: ['a', 'n', 'g']
+    my_list = ['m', 'a', 'n', 'g', 'o']
+    print (my_list)          #output: ['m', 'a', 'n', 'g', 'o']
+    print(my_list[0:3])     # Output: ['m', 'a', 'n']
+    print(my_list[-2:])     # Output: ['g', 'o']
+    print(my_list[:-1])     # Output: ['m', 'a', 'n', 'g']
+    print(my_list[::-1])    # Output: ['o', 'g', 'n', 'a', 'm']
+    print(my_list[1:4])     # Output: ['a', 'n', 'g']
 
 ## Python Variables.
     Variable is the container to store a data ,in python we can declare a variable by following way.
@@ -192,7 +191,50 @@ print(my_list[1:4])     # Output: ['a', 'n', 'g']
         Less than     (x < y)                 # True
         Greater than or equal (x >= y)         # False
         Less than or equal     (x <= y)        # True
+
+ ## Day@2
+ ###   String and String Methods
+    Strings are sequence of character which is denoted by single double or triple quotation.Strings are immutable.
+        
+ ### String Methods
+    ####Indexing
+    my-name = "neha" 
+    print(my_name[0])    (1st letter)
+    print(my_name[1])    (2nd letter)
+    print(my_name[-1])   (last letter)
      
 
+  #### .lower()
+    changes to a lower letter
+ #### .Upper()
+    It changes all the word into small letter.  
+#### .Strip()
+    It removes the unnecessary white space from the word(i.e not from the each words after the ending of word.)
+####  .replace() 
+    Changes one word or letter to another (We can change or replace after defining also).
+ #### .Count()
+    It counts how many times words are repeated.
+ #### .Capitalize()
+     It help to capitalize initial word only.
+#### .Splits() 
+    It turns all the strings into list .
+
+ ####  Slicing
+    Slicing is the process of getting desirable position only. for an example:            
+
+    print(my_name[0:2])   (from index 0 to 1)
+    print(my_name[1:])    (from index 1 to end)
+    print(my_name[:3])    (from start to index 2)
+    print(my_name[:])     (whole string)
+    print(my_name[::-1])  (reversed string)
+    print(my_name[::2])   (every 2nd character: index 0, 2)
 
 
+#### fstring
+    fstring in python is formatted way of string. It simply give clear and better understanding way in output, For an example:
+    
+    name = "Neha"
+    age = 24
+    print(f"My name is {name} and I am {age} years old.")
+    {Output: My name is Neha and I am 24 years old.}
+    We can also add and other mathematical operations also.
