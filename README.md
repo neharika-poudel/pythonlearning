@@ -192,7 +192,7 @@ my_list.clear()
         Greater than or equal (x >= y)         # False
         Less than or equal     (x <= y)        # True
 
- ## Day@2
+ ## Day 3
  ###   String and String Methods
     Strings are sequence of character which is denoted by single double or triple quotation.Strings are immutable.
         
