@@ -75,54 +75,7 @@ f. Boolean Type
 
     my_list = ["neha","roshni","shruti"]
     print(my_list)
-    print(my_list[0])   
-    print(my_list[-1])
-
-### List Methods:
-
-my_list.append(50)      
-my_list.insert(1, 15)   
-my_list.remove(20)       
-my_list.pop()            
-my_list.clear()          
- class_list = ["neha", "shruti", "Srijana", "neha", "Santosh"]
-
-    print( class_list)                    #for all class_list
-    print( len(class_list))               # To get the length of the class_list
-    print( class_list.count("neha"))      #to count how many times repeated item are there in list.
-
-    class_list.pop()                      #To remove the last and return from class_list
-    print( class_list)
-
-    class_list.reverse()#To reversed class_list
-    print( class_list)
-
-    new_students = ["Ram", "Shyam"]
-    class_list.extend(new_students)       #here class_list extends the properties of new_students.
-
-### list slicing
-    my_list = ['m', 'a', 'n', 'g', 'o']
-    print (my_list)          #output: ['m', 'a', 'n', 'g', 'o']
-    print(my_list[0:3])     # Output: ['m', 'a', 'n']
-    print(my_list[-2:])     # Output: ['g', 'o']
-    print(my_list[:-1])     # Output: ['m', 'a', 'n', 'g']
-    print(my_list[::-1])    # Output: ['o', 'g', 'n', 'a', 'm']
-    print(my_list[1:4])     # Output: ['a', 'n', 'g']
-
-## Python Variables.
-    Variable is the container to store a data ,in python we can declare a variable by following way.
-
-### integer variable declaration.
-    my_var=5
-    print(my_var)
-
-### string variable
-    my_var="hello"
-    print(my_var)
-
-### list variables
-    my_var=["neha","roshni","santosh" ,"sruti"]
-    print(my_var)
+ 
 
 ### Assigning variable
     my_var=["neha","roshni","santosh" ,"sruti"]
@@ -197,12 +150,14 @@ my_list.clear()
     Strings are sequence of character which is denoted by single double or triple quotation.Strings are immutable.
         
  ### String Methods
+ 
     ####Indexing
     my-name = "neha" 
     print(my_name[0])    (1st letter)
     print(my_name[1])    (2nd letter)
     print(my_name[-1])   (last letter)
-     
+     empty string is denoted by 
+     '',"",""""(it will give nothing because this is empty strings.)
 
   #### .lower()
     changes to a lower letter
@@ -238,3 +193,112 @@ my_list.clear()
     print(f"My name is {name} and I am {age} years old.")
     {Output: My name is Neha and I am 24 years old.}
     We can also add and other mathematical operations also.
+
+ #### centre()
+    str="Demo"
+    print(str.centre(10,":"))
+
+### Day4
+## List in Python
+    -> A list is a collection which is ordered and mutable (changeable/Which value can be change even after defining). 
+    -> It allows duplicate value(i.e We can give same value while assigning a value to the list).
+    ->  empty list is denoted by [].
+
+
+## Creating a list
+
+    my_list = ["neha","roshni","shruti"]
+    print(my_list)
+    print(my_list[0])   
+    print(my_list[-1])
+
+### List Methods:
+
+    my_list.append(50)      
+    my_list.insert(1, 15)   
+    my_list.remove(20)       
+    my_list.pop()            
+    my_list.clear()          
+    class_list = ["neha", "shruti", "Srijana", "neha", "Santosh"]
+
+    print( class_list)                    #for all class_list
+    print( len(class_list))               # To get the length of the class_list
+    print( class_list.count("neha"))      #to count how many times repeated item are there in list.
+
+    class_list.pop()                      #To remove the last and return from class_list
+    print( class_list)
+
+    class_list.reverse()#To reversed class_list
+    print( class_list)
+
+    new_students = ["Ram", "Shyam"]
+    class_list.extend(new_students)       #here class_list extends the properties of new_students.
+
+### list slicing
+    my_list = ['m', 'a', 'n', 'g', 'o']
+    print (my_list)          #output: ['m', 'a', 'n', 'g', 'o']
+    print(my_list[0:3])     # Output: ['m', 'a', 'n']
+    print(my_list[-2:])     # Output: ['g', 'o']
+    print(my_list[:-1])     # Output: ['m', 'a', 'n', 'g']
+    print(my_list[::-1])    # Output: ['o', 'g', 'n', 'a', 'm']
+    print(my_list[1:4])     # Output: ['a', 'n', 'g']
+
+
+
+### list variables
+    my_var=["neha","roshni","santosh" ,"sruti"]
+    print(my_var)
+
+#### Remove list
+    my_var = ["apple", "banana", "cherry"]
+    my_var.remove("banana")
+    print(my_var)
+
+#### add list
+    my_var = ["apple", "banana", "cherry"]
+    my_var.append("orange")
+    print(my_var)   
+
+    
+
+    ### sort list
+    sort helps to change list in ascending order.
+
+    my_var = ["apple", "banana", "cherry"]
+    my_list.sort()
+    print(my_list)
+
+
+
+### Tuples
+    tuples are used to store multiple item into a single variable. Tuples can be a same or different data type
+    -> tuples also allow duplicate value
+    -> It is a ordered collection
+    -> tuples are immutable (that means it cant be change after defining), we can not change, add  or remove in tuple.
+    -> It is denoted by()
+    
+     my_tuple=("neha","srijana", "roshni")
+     print(my_list)
+
+     #### Tuple method
+     my_tuple=("neha","srijana", "roshni")
+     print(len(my_tuple))
+
+     my_tuple=("neha","srijana", "roshni")
+     print(type(my_tuple))
+
+### list vs tuple
+     my_list = [1, 2, 3]
+     my_tuple = (1, 2, 3)
+    -> Lists can be changed or you can add, remove, or update. But tuples cannot be changed once created.
+
+    -> Lists use square brackets like [1, 2, 3], while tuples use round brackets (1, 2, 3).
+
+    -> Lists are a bit slower because they can change and contain more memory, but tuples are faster and use less memory.
+
+    ->  Lists have many functions you can use, like .append() or .remove(). Tuples only have a couple, like .count() and .index().
+
+    -> You can’t use lists as dictionary keys, but you can use tuples if they only have unchangeable items.
+
+    
+
