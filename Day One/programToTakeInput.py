@@ -4,3 +4,5 @@ quote=input("Your favorite quotes:")
 print("Name:" + my_name)
 print("Age is:"  + str(age))
 print("Quotes:" + quote)
+
+# this program will take the name, age and quotes
